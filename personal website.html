@@ -1,0 +1,417 @@
+<!DOCTYPE html> 
+
+<html lang="eng">
+        <head> 
+            <meta charset="UTF-8">
+        <style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Iso&display=swap');
+p{
+     font-family: 'Press Start 2P', cursive;
+     font-size: 10px;
+     color: white;
+}
+h1, h2, h3, h4, h5{
+     font-family: 'Rubik Iso', cursive;
+     font-size: 15px;
+     color: blue;
+}
+     body {
+      background: url(https://i.imgur.com/Cdb9p6G.png);
+}
+
+.profile {
+   background: url(https://f4.bcbits.com/img/a1924344540_10.jpg);
+}
+:root {
+    --logo-blue: url(https://phoneky.co.uk/thumbs/screensavers/down/animals/fish_oRkyZzAJ.gif);
+    --darker-blue: green;
+    --lighter-blue: blue;
+    --even-lighter-blue: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVu7tKIENj4GW_KC0S9ogj2XrBeKAEM-DMbA&usqp=CAU);
+    --lightest-blue: url(https://assets.isu.pub/document-structure/230330104259-e4d4595e6e8dd79008e1c1747c72595f/v1/1bb948670de9c9d78bc017b6e0b792c1.jpeg);
+    --dark-orange: blue;
+    --light-orange: url(https://media1.giphy.com/media/h6x0ROdzJy4TKyUu1b/giphy.gif?cid=6c09b952ki65s334ja1oizehrzj906dxtsv50fif345zmo4a&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    --even-lighter-orange: black;
+    --green: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjZDNiYWuTk66Tg_jJ-kCXSuBpWyeYhZVZQ&usqp=CAU);
+}
+html:before{ 
+   animation: grain 8s steps(10) infinite;
+   background-image: url(https://img1.picmix.com/output/stamp/normal/3/8/7/9/859783_9a17e.gif);
+   background-size: 101%; 
+   content: "";
+   height: 200%;
+   left: -50%;
+   opacity:.5;
+   position: fixed;
+   top: -100%;
+   width: 200%;
+   pointer-events:none}
+</style>
+<div style="max-height: 200px; position: fixed; top: 1px; bottom: 10px; right: 1px; z-index: 200;"><img src="https://i.imgur.com/CBVD87o.gif"/></div>
+<style>HTML,BODY{cursor: url("https://i.imgur.com/EjVYzO7.png"), url("https://i.imgur.com/EjVYzO7.png"), auto;}
+</style>
+
+<style>A:hover{cursor: url("https://i.imgur.com/EjVYzO7.png"), url("https://i.imgur.com/EjVYzO7.png"), auto;}</style>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySpace Box Layout</title>
+  <style>
+    /* ===================================================
+       MYSPACE THEME VARIABLES - Tweak your colors here!
+       =================================================== */
+    :root {
+      --myspace-orange: #0B90E5;     /* Box Header Color */
+      --myspace-blue: #003366;       /* Accent / Border Color */
+      --myspace-light-blue: #b4d0e7; /* Details Header Color */
+      --box-bg: #ffffff;             /* Box Inside Background */
+      --body-bg: #e5e5e5;            /* Page Background */
+      --text-color: #000000;         /* Default Text */
+      --link-color: #003399;         /* Link Color */
+      --border-color: #003366;       /* Solid Outer Border */
+    }
+
+    /* Basic Page Styles */
+    body {
+      background-color: var(--body-bg);
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      color: var(--text-color);
+      margin: 20px;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--myspace-orange);
+    }
+
+    /* Main Container (Two Columns) */
+    .myspace-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .col-left {
+      flex: 1 1 280px;
+    }
+
+    .col-right {
+      flex: 2 1 450px;
+    }
+
+    /* ===================================================
+       REUSABLE MYSPACE CONTENT BOX
+       =================================================== */
+    .myspace-box {
+      background: var(--box-bg);
+      border: 1px solid var(--border-color);
+      margin-bottom: 15px;
+      box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    }
+
+    .myspace-box-header {
+      background: var(--myspace-orange);
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .myspace-box-body {
+      padding: 10px;
+    }
+
+    /* Profile Info & Online Status */
+    .profile-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .online-now {
+      color: #00aa00;
+      font-weight: bold;
+      font-size: 11px;
+      margin: 5px 0 10px 0;
+    }
+
+    .profile-pic {
+      width: 100%;
+      max-width: 170px;
+      border: 1px solid #999;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* Contact Table Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .contact-btn {
+      display: block;
+      background: var(--myspace-blue);
+      color: #ffffff !important;
+      text-align: center;
+      padding: 6px 2px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .contact-btn:hover {
+      background: var(--myspace-orange);
+      text-decoration: none;
+    }
+
+    /* Profile Details Table */
+    .details-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+
+    .details-table td {
+      padding: 4px 6px;
+      border-bottom: 1px solid #ececec;
+    }
+
+    .details-table td.label {
+      background-color: var(--myspace-light-blue);
+      font-weight: bold;
+      color: var(--myspace-blue);
+      width: 35%;
+    }
+
+    /* Top 8 Friends Grid */
+    .top8-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .friend-card img {
+      width: 100%;
+      height: 95px;
+      object-fit: cover;
+      border: 1px solid #666;
+    }
+
+    .friend-name {
+      font-size: 10px;
+      margin-top: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Comments List */
+    .comment-item {
+      display: flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .comment-user {
+      width: 70px;
+      text-align: center;
+    }
+
+    .comment-user img {
+      width: 55px;
+      height: 55px;
+      object-fit: cover;
+      border: 1px solid #999;
+    }
+
+    .comment-body {
+      flex: 1;
+    }
+
+    .comment-date {
+      font-size: 9px;
+      color: #666;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="myspace-container">
+
+    <!-- ================= LEFT COLUMN ================= -->
+    <div class="col-left">
+
+      <!-- Profile Card Box -->
+      <div class="myspace-box">
+        <div class="myspace-box-header">My Profile</div>
+        <div class="myspace-box-body">
+          <div class="profile-title">Aaron </div>
+          <div class="online-now">ONLINE NOW! ⚡</div>
+          <img src="https://i.pinimg.com/736x/c9/df/74/c9df745f5dc5bf4a8fdaa9f40c8afb45.jpg" alt="Profile Picture" class="profile-pic">
+          <p style="color: blue;"><i>"Welcome to my page!"</i></p>
+          <p style="color: blue;">Male<br>20 years old<br>Montreal, QC</p>
+        </div>
+      </div>
+
+      <!-- Contact Box -->
+      <div class="myspace-box">
+        <div class="myspace-box-header">Contacting Aaron</div>
+        <div class="myspace-box-body">
+          <div class="contact-grid">
+            <a href="#" class="contact-btn">Add Friend</a>
+            <a href="#" class="contact-btn">Send Message</a>
+            <a href="#" class="contact-btn">Forward</a>
+            <a href="#" class="contact-btn">Add Favorites</a>
+            <a href="#" class="contact-btn">Instant Msg</a>
+            <a href="#" class="contact-btn">Block User</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details Box -->
+      <div class="myspace-box">
+        <div class="myspace-box-header">Aaron's Details</div>
+        <div class="myspace-box-body" style="padding:0;">
+          <table class="details-table">
+            <tr>
+              <td class="label">Status:</td>
+              <td>Single</td>
+            </tr>
+            <tr>
+              <td class="label">Zodiac:</td>
+              <td>Capricorn</td>
+            </tr>
+            <tr>
+              <td class="label">Occupation:</td>
+              <td>Student/Software Developer</td>
+            </tr>
+            <tr>
+              <td class="label">Hometown:</td>
+              <td>Montreal, QC</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= RIGHT COLUMN ================= -->
+    <div class="col-right">
+
+      <!-- About Me Box -->
+      <div class="myspace-box">
+        <div class="myspace-box-header">Aaron's Blurbs</div>
+        <div class="myspace-box-body">
+          <h4 style="margin: 0 0 5px 0; color: var(--myspace-orange);">About Me:</h4>
+          </p>
+          <p style="color: blue;"> Hey everyone! Thanks for stopping by my profile. I love web coding, 2000s nostalgia, digital art, and alternative music. Feel free to leave a comment or drop me a message!</p>
+
+        </p>
+
+          <h4 style="margin: 0 0 5px 0; color: var(--myspace-orange);">Who I'd Like to Meet:</h4>
+          <p style="line-height: 1.4; color: blue;">
+            Fellow web creators, retro tech enthusiasts, and anyone who remembers customizing HTML/CSS on their profile back in the day!
+          </p>
+        </div>
+      </div>
+
+      <!-- Top 8 Friends Box -->
+      <div class="myspace-box">
+        <div class="myspace-box-header">Aaron's Friend Space (Top 8)</div>
+        <div class="myspace-box-body">
+          <p style="color: blue;"><strong>Aaron has <span style="color:blue;">8</span> Friends.</strong></p>
+          <div class="top8-grid">
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Sarah</div></a>
+              <img src ="C:\Users\abina\Downloads\d85343cbfd2aad52bbc183238144f949.jpg" alt="Sarah" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Alex</div></a>
+              <img src="https://i.pinimg.com/736x/51/fc/ce/51fccecd6725c3357ecad5142db4b3ad.jpg" alt="Alex" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Jordan</div></a>
+              <img src="https://i.pinimg.com/736x/df/f5/a2/dff5a27ec06c67572b678e73988d4108.jpg" alt="Jordan" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Emily</div></a>
+              <img src="https://i.pinimg.com/736x/3b/db/7d/3bdb7dc88dcfe19026e654167ca07f1e.jpg" alt="Emily" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Chris</div></a>
+              <img src="https://i.pinimg.com/736x/07/db/23/07db23bcdd45190f483d643f01e3c430.jpg" alt="Chris" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Maya</div></a>
+              <img src="https://i.pinimg.com/736x/fc/86/15/fc8615ac581b13e9c9fcd82aae23a96f.jpg" alt="Maya" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Dave</div></a>
+              <img src="https://i.pinimg.com/736x/7f/a9/9d/7fa99d2865c2ce56f926e81cbe580a50.jpg" alt="Dave" width="50" height="50">
+            </div>
+            <div class="friend-card">
+              <a href="#"><div class="friend-name">Taylor</div></a>
+              <img src="https://i.pinimg.com/1200x/2b/84/f3/2b84f3dd3e0afba36ea08f29cd38e8e8.jpg" alt="Taylor" width="50" height="50" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comments Box -->
+      <div class="myspace-box">
+        <div class="myspace-box-header">Aaron's Friends Comments</div>
+        <div class="myspace-box-body">
+          <p style="color: blue;"><strong>Displaying <span style="color:blue;">2</span> of 2 comments</strong></p>
+          
+          <div class="comment-item">
+            <div class="comment-user">
+              <a href="#">Sarah</a><br>
+              <img src="C:\Users\abina\Downloads\d85343cbfd2aad52bbc183238144f949.jpg" alt="Sarah" width="50" height="50">
+            </div>
+            <div class="comment-body">
+              <div class="comment-date">Sep 28, 2026 4:15 PM</div>
+              Thanks for adding me! Love the custom layout on your profile! 🤘
+            </div>
+          </div>
+
+          <div class="comment-item">
+            <div class="comment-user">
+              <a href="#">Alex</a><br>
+              <img src="https://i.pinimg.com/736x/51/fc/ce/51fccecd6725c3357ecad5142db4b3ad.jpg" alt="Alex" width="50" height="50">
+            </div>
+            <div class="comment-body">
+              <div class="comment-date">Sep 27, 2026 11:30 AM</div>
+              PC4PC? Hope you have a great week!
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>
+
